@@ -1,0 +1,12 @@
+  <span>Nom du développeur: </span>
+  <span>{{Dev1.firstName}}</span><br>
+  <span>Prénom du développeur: </span>
+  <span>{{Dev1.lastName}}</span><br>
+  <span>Age du  développeur: </span>
+  <span>{{Dev1.age}}</span><br>
+  <span>sexe du développeur: </span>
+  <span>{{Dev1.gender}}</span><br>
+  <span>Bio du développeur: </span>
+  <span>{{Dev1.bio}}</span><br><br>
+  <span>Skills: </span><br>
+  <app-skill *ngFor="let truc of Dev1.skills" [nomskill]="truc.name" [logoskill]="truc.logo" [siteskill]="truc.site"></app-skill>
